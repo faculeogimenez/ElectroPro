@@ -7,62 +7,88 @@
     <meta name="description" content="ElectroPro ofrece servicios profesionales de instalaciones, reparaciones, planos eléctricos y automatismos.">
     <meta name="keywords" content="electricista, instalaciones eléctricas, reparaciones, planos eléctricos, cámaras de seguridad, automatismos">
     <meta name="author" content="ElectroPro">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1 class="main-title">ElectroPro Instalaciones Electricas</h1>
-        <h2>Elige una categoría</h2>
-        <div class="categories">
-            <a href="Nosotros.html" class="category" aria-label="Sobre nosotros">
-                <i class="fas fa-user-friends"></i>
-                <p>Nosotros</p>
+<body class="bg-dark text-light">
+    <div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center text-center" style="background: url('background.jpg') no-repeat center center/cover;">
+        <h1 class="display-3 fw-bold text-warning mb-4">ElectroPro Instalaciones Eléctricas</h1>
+        <h2 class="mb-5">Elige una categoría</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-user-friends fa-3x mb-3"></i>
+                        <h5 class="card-title">Nosotros</h5>
+                        <a href="Nosotros.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-video fa-3x mb-3"></i>
+                        <h5 class="card-title">Cámaras de Seguridad</h5>
+                        <a href="Camaras.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-wrench fa-3x mb-3"></i>
+                        <h5 class="card-title">Reparaciones</h5>
+                        <a href="Reparaciones.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-bolt fa-3x mb-3"></i>
+                        <h5 class="card-title">Instalaciones</h5>
+                        <a href="Instalaciones.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-drafting-compass fa-3x mb-3"></i>
+                        <h5 class="card-title">Planos Eléctricos</h5>
+                        <a href="Planos_Electricos.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary text-light text-center">
+                    <div class="card-body">
+                        <i class="fas fa-microchip fa-3x mb-3"></i>
+                        <h5 class="card-title">Automatismos</h5>
+                        <a href="Automatismos.html" class="btn btn-warning mt-3">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Redes sociales -->
+        <div class="mt-5">
+            <a href="https://wa.me/542233468723?text=Hola,%20quiero%20más%20información." class="btn btn-success me-2" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
-            <a href="Camaras.html" class="category" aria-label="Cámaras de seguridad">
-                <i class="fas fa-video"></i>
-                <p>Cámaras de Seguridad</p>
+            <a href="https://www.instagram.com/fgelectricista" class="btn btn-danger me-2" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i> Instagram
             </a>
-            <a href="Reparaciones.html" class="category" aria-label="Reparaciones eléctricas">
-                <i class="fas fa-wrench"></i>
-                <p>Reparaciones</p>
-            </a>
-            <a href="Instalaciones.html" class="category" aria-label="Instalaciones eléctricas">
-                <i class="fas fa-bolt"></i>
-                <p>Instalaciones</p>
-            </a>
-            <a href="Planos_Electricos.html" class="category" aria-label="Planos eléctricos">
-                <i class="fas fa-drafting-compass"></i>
-                <p>Planos Eléctricos</p>
-            </a>
-            <a href="Automatismos.html" class="category" aria-label="Automatismos eléctricos">
-                <i class="fas fa-microchip"></i>
-                <p>Automatismos</p>
+            <a href="https://www.facebook.com/share/19xpPQBGgs/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i> Facebook
             </a>
         </div>
-
-        <!-- Barra de redes sociales en la parte inferior -->
-        <div class="social-bar">
-            <a href="https://wa.me/542233468723?text=Hola,%20quiero%20más%20información." 
-               target="_blank" rel="noopener noreferrer" aria-label="Seguinos en X">
-                <i class="fab fa-x"></i>
-            </a>
-            <a href="https://www.instagram.com/fgelectricista?igsh=MXg4NnBidXNjNHJqMg==" 
-               target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/share/19xpPQBGgs/" 
-               target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Facebook">
-                <i class="fab fa-facebook"></i>
-            </a>
-        </div>
-
-        <!-- Botón flotante de WhatsApp -->
-        <a href="https://wa.me/542233468723?text=Hola,%20quiero%20más%20información." 
-           class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i> Contáctanos
-        </a>
     </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

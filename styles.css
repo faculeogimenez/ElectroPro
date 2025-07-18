@@ -2,7 +2,7 @@
 body {
     height: 110vh; /*viewport*/
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-image: url('imagenes/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,6 +182,16 @@ h2 {
     .social-icons a {
         font-size: 1.2rem; /* Ajuste de tamaño de iconos sociales */
     }
+}
+
+/* Estilos adicionales */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 

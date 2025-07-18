@@ -8,7 +8,7 @@
 /* Estilos generales */
 body {
     height: 100vh; /*viewport*/
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -57,6 +57,10 @@ header {
     color: #333;
     line-height: 1.5;
     margin-bottom: 10px;
+    opacity: 0; /* Inicia invisible */
+    transform: translateY(20px); /* Baja el texto al inicio */
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Retrasa la animación medio segundo */
 }
 
 /* Footer */
@@ -64,6 +68,7 @@ footer {
     text-align: center;
     padding: 15px;
     background-color: #134647;
+    margin-top: 50px;
 }
 
 footer a {
@@ -160,11 +165,22 @@ h2 {
 .social-icons a {
     font-size: 1.2rem; /* Ajuste de tamaño de iconos sociales */
 }
-.text-container p {
-    opacity: 0; /* Inicia invisible */
-    transform: translateY(20px); /* Baja el texto al inicio */
-    animation: fadeInUp 1s ease-out forwards;
-    animation-delay: 0.5s; /* Retrasa la animación medio segundo */
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 @keyframes fadeInUp {
