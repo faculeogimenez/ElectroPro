@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    height: 100vh; /*viewport*/
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+}
+
+/* Contenedor principal */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 50px;
+    gap: 40px;
+}
+
+/* Imagen a la izquierda */
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto a la derecha */
+.text-container {
+    max-width: 500px;
+}
+
+.text-container h2 {
+    font-size: 28px;
+    color: #134647;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #134647;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+    color: #bfac8b;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .text-container {
+        max-width: 90%;
+    }
+}
+h2 {
+    text-align: center;
+}
+
+/* Barra de redes sociales en la parte inferior */
+.social-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.social-bar a {
+    margin: 0 15px;
+    font-size: 30px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-bar a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Iconos de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+.social-icons a {
+    font-size: 1.2rem; /* Ajuste de tamaño de iconos sociales */
+}
+.text-container p {
+    opacity: 0; /* Inicia invisible */
+    transform: translateY(20px); /* Baja el texto al inicio */
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Retrasa la animación medio segundo */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

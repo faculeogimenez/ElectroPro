@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    height: 110vh; /*viewport*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-size: 3rem;
+    margin-bottom: ;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor principal */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #d1d1d1;
+}
+
+/* Categorías */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.category i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.category p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Barra de redes sociales en la parte inferior */
+.social-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.social-bar a {
+    margin: 0 15px;
+    font-size: 30px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-bar a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Iconos de redes sociales */
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00bcd4;
+}
+
+/* Estilo del título principal */
+.main-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fcf6f6; /* Un tono oscuro elegante */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.main-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #f39c12; /* Un color llamativo (puedes cambiarlo) */
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* Media Queries para dispositivos más pequeños */
+@media (max-width: 1024px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajuste de tamaño de fuente */
+    }
+
+    h2 {
+        font-size: 1rem; /* Ajuste de tamaño de subtítulo */
+    }
+
+    .social-icons a {
+        font-size: 1.2rem; /* Ajuste de tamaño de iconos sociales */
+    }
+}
+
+
