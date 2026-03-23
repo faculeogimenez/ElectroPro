@@ -3,7 +3,7 @@ body {
     height: 110vh; /*viewport*/
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-image: url('imagenes/fondo.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

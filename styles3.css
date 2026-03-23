@@ -11,7 +11,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
-    background-image: url('imagenes/fondo.jpg');
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,7 +57,7 @@ body {
 .text-content p {
     margin-top: 10px;
     font-size:medium;
-    color: #555;
+    color: black;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-out forwards;
