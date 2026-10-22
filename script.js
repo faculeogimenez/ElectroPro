@@ -19,6 +19,18 @@ const TRABAJOS = [
 const urlWhatsApp = (texto) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
 
+// El acordeón también funciona como navegación por toque y teclado.
+const heroMenuItems = [...document.querySelectorAll(".hero-menu-item")];
+heroMenuItems.forEach((item) => {
+  const activateItem = () => {
+    heroMenuItems.forEach((menuItem) => menuItem.classList.remove("is-active"));
+    item.classList.add("is-active");
+  };
+  item.addEventListener("mouseenter", activateItem);
+  item.addEventListener("focusin", activateItem);
+  item.addEventListener("click", activateItem);
+});
+
 // Todos los enlaces con data-whatsapp abren el chat con el mensaje base
 document.querySelectorAll("[data-whatsapp]").forEach((a) => {
   a.href = urlWhatsApp(MENSAJE_BASE);
